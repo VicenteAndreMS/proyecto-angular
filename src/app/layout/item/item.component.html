@@ -1,0 +1,26 @@
+<div class="item" [ngClass]="{'completed':item.completed}">
+    <div class="img">
+        <img src="./assets/{{item.title}}.jpg">
+    </div>
+    <!-- Entrada tipo CheckBox -->
+    
+    <input type="checkbox" [checked]="item.completed" (change)="onToggle(item)">
+
+    <!-- Título y de más propiedades del objeto -->
+    <br>
+    <div class="title">
+        {{item.title}}
+    </div>
+    <div class="price">
+        Precio: {{item.price | currency}}
+    </div>
+    <div class="quantity">
+        Cantidad: {{item.quantity}}
+    </div>
+    <div class="totales">
+        Total: {{(item.price * item.quantity) | currency}}
+    </div>
+    <br>
+  <!-- Este botón lo que hará será eliminar el artículo-->  
+    <button (click)="onDelete(item)">Eliminar</button>
+</div>

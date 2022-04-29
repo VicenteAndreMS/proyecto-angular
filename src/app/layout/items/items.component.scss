@@ -1,0 +1,16 @@
+.items{
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    flex-direction: row;
+    flex-wrap:wrap;
+    background: rgb(169, 169, 182);
+    padding-top: 20px;
+}
+.items .app-total{
+    width: 100%;
+}
+.items .app-total .app-total-interno{
+    width: 100%;
+    display: none;
+}

@@ -1,0 +1,45 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 40px;
+    background: white;
+    padding:15px;
+    border-radius: 7px;
+}
+.item .img{
+    border-radius: 7px;
+    background: rgb(75, 75, 77);
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+}
+.item .img img{
+    width:100%;
+}
+.item .title{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.item .totales{
+    color: green;
+    font-weight: bold;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.completed .img{
+    opacity: 0.5;
+}
+
+.completed .total{
+    color: #ccc;
+}
